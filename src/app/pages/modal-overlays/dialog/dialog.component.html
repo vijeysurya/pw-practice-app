@@ -33,6 +33,17 @@
   </div>
 
   <div class="col-md-12 col-lg-6 col-xxxl-3">
+    <nb-card>
+      <nb-card-header>Open Without Backdrop Click</nb-card-header>
+      <nb-card-body>
+        <button nbButton (click)="open()">Open Dialog with backdrop click</button>
+
+        <button nbButton (click)="openWithoutBackdropClick(dialog)">Open without backdrop click</button>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-md-12 col-lg-6 col-xxxl-3">
     <nb-card class="form-input-card">
       <nb-card-header>Return Result From Dialog</nb-card-header>
       <nb-card-body class="result-from-dialog">
@@ -40,7 +51,7 @@
         <br>
         <h3 class="title">Names:</h3>
         <ul>
-          <li *ngFor="let name of names">{{ name }}</l
+          <li *ngFor="let name of names">{{ name }}</l>
         </ul>
       </nb-card-body>
     </nb-card>
