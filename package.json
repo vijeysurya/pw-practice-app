@@ -11,7 +11,7 @@
     "start": "ng serve",
     "pageObject-chromium-dev": "npx playwright test usePageObject.spec.js --project=Dev --headed",
     "pageObject-firefox-uat": "npx playwright test usePageObject.spec.js --project=UAT --headed",
-    "pageObject-navitest": "npx playwright test usePageObject.spec.js --project=chromium --grep ^@navitest --headed",
+    "pageObject-navitest": "npx playwright test usePageObject.spec.js --project=chromium",
     "pageObject-paramtest": "npx playwright test usePageObject.spec.js --project=firefox --grep ^@paramtest --headed"
   },
   "dependencies": {

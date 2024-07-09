@@ -34,3 +34,11 @@ test('parameterized methods @paramtest',async ({page})=>{
     await pm.datepicker().rangeDatePicker(50,60)
 
 })
+
+test.only('test argos ci actions',async ({page})=>{
+    const pm = new PageManager(page)
+
+    await pm.navipageto().formLayoutPage()
+    await pm.navipageto().datepickerPage()
+
+})
